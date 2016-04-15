@@ -6,7 +6,7 @@ import java.awt.*;
 
 public class ColorGUI extends JFrame{
 
-    int len = 1500;
+    int len = 1536;
     private JPanel colorPanel;
 
     ColorGUI() {

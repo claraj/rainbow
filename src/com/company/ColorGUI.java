@@ -3,6 +3,8 @@ package com.company;
 import javax.swing.*;
 import java.awt.*;
 
+// Testing the Rainbow class.
+
 
 public class ColorGUI extends JFrame {
 
@@ -29,6 +31,8 @@ public class ColorGUI extends JFrame {
 
             rainbow.resetBlue();
 
+            // Some alternatives....
+
             //rainbow.resetRed();
             //rainbow.resetCyan();
             //rainbow.resetGreen();
@@ -37,6 +41,8 @@ public class ColorGUI extends JFrame {
 
             for (int x = 0; x < len; x++) {
                 g.setColor(rainbow.nextRainbowColor());
+
+                //Draw a rectangle 1 pixel wide and 100 pixels tall, which will look like a stripe of this color.
                 g.drawRect(x, 0, 1, 100);
             }
         }

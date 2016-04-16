@@ -17,16 +17,16 @@ public class Rainbow {
     // R 0      G 255    B 255->0     // Cyan to green
     // R 0->255 G 255    B 0          // Green to yellow
     // R 255    G 255->0 B 0          // Yellow to red
-    // R 255    G 0      B 0->255     // Red to magenta
+    // R 255    G 0      B 0->255     // Red to magenta... and back to the start
 
     // Some defaults - starts with Magenta turning into blue.
-    int r = 255;
-    int g = 0;
-    int b = 255;
-    int diff = -1;            // Change by 1
+    private int r = 255;
+    private int g = 0;
+    private int b = 255;
+    private int diff = -1;            // Change by 1
 
-    int numberOfDiffs = 0;    // Count how many times have modified a color. After 255 modifications, need to modify the next color in the cycle.
-    int rgbCycle = 0;         // 0 = modify red ; 1 = modify green ; 2 = modify blue
+    private int numberOfDiffs = 0;    // Count how many times have modified a color by +/- 1. After 255 modifications, reset counter for modifying the next color in the cycle.
+    private int rgbCycle = 0;         // 0 = modify red ; 1 = modify green ; 2 = modify blue
 
     Rainbow() {
         reset();

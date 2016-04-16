@@ -16,6 +16,7 @@ public class ColorGUI extends JFrame {
         setContentPane(panel);
         setPreferredSize(new Dimension(len, 120));
         pack();
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setVisible(true);
     }
 
